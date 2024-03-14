@@ -1,6 +1,7 @@
 'use client'
 
 import { AuthModal } from "@/components/AuthModal";
+import { UploadModal } from "@/components/UploadModal";
 import { ProductWithPrice } from "@/types";
 import { useEffect, useState } from "react";
 
@@ -22,7 +23,8 @@ const ModalProvider: React.FC<ModalProviderProps> = ({
 
     return (
         <>
-       <AuthModal/>
+            <AuthModal />
+            <UploadModal/>
         </>
     );
 }
